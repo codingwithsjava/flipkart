@@ -27,7 +27,7 @@ public class flipcontroller {
 //	private Flipkartservice flipkartservice;
   @GetMapping("/get")
   public ApIResponse<String> getprint() {
-	  ApIResponse apIResponse=new ApIResponse(true, 200, "this is spring boot project", null);
+	  ApIResponse apIResponse=new ApIResponse(true, 200, "this is flipkart spring boot project", null);
 
 	  return apIResponse ;
   }
