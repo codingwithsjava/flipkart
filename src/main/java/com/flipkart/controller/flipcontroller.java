@@ -26,8 +26,10 @@ public class flipcontroller {
 //	@Autowired
 //	private Flipkartservice flipkartservice;
   @GetMapping("/get")
-  public String getprint() {
-	  return "this is spring boot project";
+  public ApIResponse<String> getprint() {
+	  ApIResponse apIResponse=new ApIResponse(true, 200, "this is spring boot project", null);
+
+	  return apIResponse ;
   }
 @PostMapping("/placeorderNow")
 public ApIResponse placeorder(@RequestBody User user) {
